@@ -1,10 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>WT Project</title>
-  </head>
-  <body>
-    <h1>This is my WT Project!</h1>
-  </body>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <title>WT Project</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div id = "navbar">
+
+                <nav>
+
+                    <a href="#">Hash Me</a>
+
+                    <div class="navBlocks">
+
+                        <a href="#">Settings</a>
+                        <a href="#">About</a>
+                        <a href="#">Share</a>
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+        <section id="maincontent">
+
+            <div style="padding-top: 20px">
+
+                <div id="container">
+
+                    <div id="tabbox">
+                        <a href="#" id="signintab" class="tab select">Signin</a>
+                        <a href="#" id="signuptab" class="tab signup">Signup</a>
+                    </div>
+                    <div id="formpanel">
+                        <div id="signinbox">
+                            <form action="#" id="signinform" method = "post">
+                                <input type="text" name="username" id="username">
+                                <label for="username">Username</label>
+                                <input type="text" name="password" id="password">
+                                <label for="password">Password</label><br>
+                                <p style="color: white;">Forgot Password? <a href="user_feed.html" style="text-decoration: none; color: #42A5F5; font-style: normal">Click Here!</a></p>
+                                <h3 style="text-align: center; color: #ffffff; font-style: normal">OR</h3>
+                                <button class="googlebutton" id="googleSignin">Sign in with Google</button>
+                            </form>
+                        </div>
+                        <div id="signupbox">
+                            <form action="#" id="signupform" method = "post">
+                                <input type="email" name="email" id="newEmail">
+                                <label for="newEmail">Email</label>
+                                <input type="text" name="newUsername" id="newUsername">
+                                <label for="newUsername">Username</label>
+                                <input type="text" name="fullname" id="fullname">
+                                <label for="fullname">Full Name</label>
+                                <input type="number" name="contact" id="contact">
+                                <label for="contact">Contact</label>
+                                <input type="password" name="email" id="newPassword">
+                                <label for="newPassword">New Password</label>
+                                <input type="date" name="dob" id="dob" style="color: #9E9E9E;">
+                                <h3 style="text-align: center; color: #ffffff; font-style: normal">OR</h3>
+                                <button class="googlebutton" id="googleSigniup">Sign up with Google</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </body>
+
 </html>

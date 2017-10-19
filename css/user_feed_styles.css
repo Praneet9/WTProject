@@ -1,0 +1,226 @@
+
+/***********Body rules changed***********/
+
+html,body{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/***********Navbar Styling***********/
+
+nav{
+    width: 80%;
+    background: #ffffff;
+    height: 30px;
+    padding: 0px 10%;
+}
+nav a{
+    text-decoration: none;
+    color: #212121;
+    display: inline-block;
+    width: 70px;
+    float: left;
+    font-size: larger;
+    text-align: center;
+    padding: 16px;
+}
+nav .navBlocks a{
+    text-decoration: none;
+    color: #212121;
+    display: inline-block;
+    width: 70px;
+    float: right;
+    font-size: medium;
+    text-align: center;
+}
+nav .navBlocks a:hover{
+    color: #42A5F5;
+}
+
+/***********Three Column Section***********/
+
+#mainSection{
+    width: 100%;
+    margin-top: 30px;
+}
+
+/***********First Column - Online People***********/
+
+.leftColumn{
+    float: left;
+    width: 20%;
+}
+#online{
+    text-align: center;
+    height: auto;
+    position: fixed;
+    background: #ffffff;
+    box-shadow: 0px 0px 12px;
+    opacity: 0.9;
+}
+.onlinePeople:hover{
+    color: #42A5F5;
+}
+
+/***********Second Column - Timeline***********/
+
+.centerColumn{
+    margin-left: 20%;
+    float: left;
+    width: 60%;
+}
+
+/***********Main Header Section***********/
+
+#mainHeader{
+
+    width: 100%;
+    height: 150px;
+    background: #424242;
+    padding: 2%;
+}
+#statusDiv{
+    width: 60%;
+    padding-top: 30px
+}
+#statusDiv .dropdown{
+    color: #ffffff;
+}
+#statusDiv label{
+    display: block;
+    position: relative;
+    top: -20px;
+    left: 0px;
+    color: #9E9E9E;
+    font-size: 16px;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+#statusDiv input{
+    display: block;
+    position: relative;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #757575;
+    width: 100%;
+    font-weight: normal;
+    font-size: 16px;
+    z-index: 2;
+    padding-top: 20px;
+}
+#statusDiv input:focus{
+    outline: none;
+    border-bottom: 1px solid #42A5F5;
+    color: #E0E0E0;
+}
+#statusDiv input:focus + label{
+    top: -45px;
+    font-size: 13px;
+    color: #42A5F5;
+}
+.updateStatus{
+    background: #ECEFF1;
+    color: #000000;
+    border: none;
+    height: 30px;
+    margin-left: 10px;
+    width: 150px;
+}
+
+#thumbnailDiv{
+    width: 20%;
+}
+
+#thumbnailImage{
+    border-radius: 50%;
+    border: 2px solid #42A5F5;
+    height: 150px;
+    width: 150px;
+}
+
+#uploadDiv{
+    width: 20%;
+    padding-top: 50px
+}
+#timeline{
+    align-content: center;
+    width: 60%;
+    display: inline-block;
+    height: 500px;
+    background: #ffffff;
+}
+.image{
+    text-align: center;
+    background: #E0E0E0;
+}
+
+.image img{
+
+    max-height: 500px;
+    max-width: 600px;
+
+}
+.card{
+    background: #E0E0E0;
+    width: 600px;
+    margin-top: 5%;
+    margin-left: 17%;
+    box-shadow: 0px 0px 12px;
+    opacity: 0.9;
+}
+.like_share{
+    padding: 10px;
+    border-bottom: 1px solid;
+}
+.like_share i{
+    padding: 4px;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: #42A5F5}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/***********Third Column - Likes***********/
+
+.rightColumn{
+    float: right;
+    width: 20%;
+}
+#likes{
+    text-align: left;
+    height: auto;
+    box-shadow: 0px 0px 12px;
+    opacity: 1;
+    background: #ffffff;
+}

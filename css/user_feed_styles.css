@@ -13,7 +13,7 @@ html,body{
 
 nav{
     width: 80%;
-    background: #ffffff;
+    background: transparent;
     height: 30px;
     padding: 0px 10%;
 }

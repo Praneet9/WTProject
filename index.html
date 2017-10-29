@@ -8,7 +8,7 @@
         <title>WT Project</title>
 
         <link rel="stylesheet" href="css/styles.css">
-        <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
 
@@ -22,7 +22,10 @@
 
                 <nav>
 
-                    <a href="#">Hash Me</a>
+                    <!--<a href="#" style="font-size: 25px">HashMe</a>-->
+                    <div style="width: 20%; float: left; padding-top: 10px; padding-left: 30px">
+                        <img src="images/hashme_logo.PNG" width="120px" height="40px" style="background: transparent" alt="">
+                    </div>
 
                     <div class="navBlocks">
 
@@ -44,14 +47,10 @@
 
                 <div style="margin-left: 10%; width: 30%; float: left; padding-top: 10%">
 
-                    <h3>Hello</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Commodi ex laudantium
-                        officiis tenetur totam! Deserunt, earum
-                        quibusdam! Asperiores cum distinctio dolores,
-                        excepturi ipsa neque quasi,
-                        quidem quis ratione suscipit ullam.
+                    <h1>HashMe</h1>
+                    <p id="subtitle">
+                        Join us and help discussions and debates reach the corners of the world! <br>
+                        The website where it isn't just about growing, but growing together!
                     </p>
 
                 </div>
@@ -59,8 +58,8 @@
                 <div id="container">
 
                     <div id="tabbox">
-                        <a href="#" id="signintab" class="tab select">Signin</a>
-                        <a href="#" id="signuptab" class="tab signup">Signup</a>
+                        <a href="#" id="signintab" class="tab select">login</a>
+                        <a href="#" id="signuptab" class="tab signup">register</a>
                     </div>
                     <div id="formpanel">
                         <div id="signinbox">
@@ -69,9 +68,41 @@
                                 <label for="username">Username</label>
                                 <input type="text" name="password" id="password">
                                 <label for="password">Password</label><br>
-                                <p style="color: white;">Forgot Password? <a href="user_feed.html" style="text-decoration: none; color: #42A5F5; font-style: normal">Click Here!</a></p>
-                                <h3 style="text-align: center; color: #ffffff; font-style: normal">OR</h3>
-                                <button class="googlebutton" id="googleSignin">Sign in with Google</button>
+                                <div style="width: 100%; height: 50px">
+                                    <div style="float: left">
+                                        <button class="signinbutton" id="Signin" style="border: none;
+                                        height: 40px; width: 120px; background: #42A5F5; font-family: BreeSerif">LOGIN</button>
+                                    </div>
+                                    <div id="extraLogins">
+                                        <p style="float: left; color: white">Or Login using - </p>
+                                        <a href="index.html">
+                                            <button>
+                                                <i class="fa fa-google"></i>
+                                            </button>
+                                        </a>
+                                        <a href="index.html">
+                                            <button>
+                                                <i class="fa fa-facebook"></i>
+                                            </button>
+                                        </a>
+                                        <a href="index.html">
+                                            <button>
+                                                <i class="fa fa-twitter"></i>
+                                            </button>
+                                        </a>
+                                        <a href="index.html">
+                                            <button>
+                                                <i class="fa fa-reddit"></i>
+                                            </button>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <br>
+                                <p
+                                        style="color: white;">Forgot Password? <a href="user_feed.html" style="text-decoration: none;
+                                         color: #42A5F5; font-style: normal">Click Here!</a></p>
+
                             </form>
                         </div>
                         <div id="signupbox">

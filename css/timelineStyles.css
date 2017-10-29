@@ -1,0 +1,317 @@
+
+body{
+    margin: 0px;
+    background: url("../images/main-bg.jpg") fixed;
+    background-size: cover;
+}
+
+@font-face { font-family: Acme; src: url('../fonts/Acme-Regular.ttf'); }
+@font-face { font-family: Pacifico; src: url('../fonts/Pacifico-Regular.ttf'); }
+@font-face { font-family: IndieFlower; src: url('../fonts/IndieFlower.ttf'); }
+@font-face { font-family: BreeSerif; src: url('../fonts/BreeSerif-Regular.ttf'); }
+
+/*********************************Navbar Styling*********************************/
+
+.navbar {
+    overflow: hidden;
+    background-color: #263238;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    box-shadow: 0px 0px 12px;
+}
+
+.navbar input:focus{
+    outline: none !important;
+}
+
+/* Links inside the navbar */
+.navbar a,#abc {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-family: BreeSerif;
+}
+
+#navHeading{
+    margin-left: 10%;
+    float: left;
+    color: white
+}
+
+#navList{
+    margin-right: 10%
+}
+
+#navList a:hover{
+    color: #1E88E5;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: BreeSerif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+button,a,li,p{
+    font-family: Acme;
+}
+
+/*********************************Collapsible List Styling*********************************/
+
+#collapsible{
+    width: 20%;
+    float: left;
+    margin-left: 10%
+}
+
+.wrapper{
+    width: 70%;
+    margin-top: 28px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 0;
+    text-align: center;
+    height: auto;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: none;
+    background: #37474F;
+    color: white;
+    box-shadow: 0px 0px 4px;
+    margin-top: 10px;
+}
+
+label:hover{
+    background: #1E88E5;
+    color: white;
+}
+
+ul ul li{
+    padding: 10px;
+    background: #ffffff;
+}
+
+ul ul{
+    box-shadow: 0px 0px 4px;
+}
+
+input[type="checkbox"]{
+    position: absolute;
+    display: none;
+}
+
+input[type="checkbox"] ~ ul{
+    height: 0;
+    transform: scaleY(0);
+}
+
+input[type="checkbox"]:checked ~ ul{
+    height: 100%;
+    transform-origin: top;
+    transition: transform .2s ease-out;
+    transform: scaleY(1);
+}
+
+input[type="checkbox"]:checked + label{
+    background: #1E88E5;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 4px;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+/*********************************Main Timeline Styling*********************************/
+
+#timelistColumn{
+    width: 70%;
+    float: left;
+    margin-top: 20px;
+    margin-right: 0%
+}
+
+.contribution{
+    margin: 5px;
+    box-shadow: 0px 0px 4px;
+}
+
+.card{
+    width: 80%;
+    height: auto;
+    box-shadow: 0px 0px 4px;
+    margin-bottom: 40px;
+    /*background: #CFD8DC;*/
+    background: #37474F;
+    padding-bottom: 5px;
+}
+
+/****************Header Styling******************/
+
+.header{
+    height: 45px;
+    background: #37474F;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 0;
+    font-style: italic;
+}
+
+.header h3{
+    padding: 10px;
+}
+
+/****************Post Styling******************/
+
+.post{
+    padding: 2px 10px 5px 10px;
+    background: #ffffff;
+    border-bottom: solid 1px #bdbdbd;
+}
+
+/****************Like Styling******************/
+
+.like_share{
+    padding: 10px;
+    background: #ffffff;
+    border-bottom: solid 1px #bdbdbd;
+}
+
+.like_share a button{
+    background: transparent;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+}
+.like_share a button:hover{
+    color: #42A5F5;
+    cursor: hand;
+    font-style: italic;
+}
+
+.right{
+    float: right;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button{
+    background: transparent;
+    border: none;
+    padding-top: 7px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+ .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+ }
+
+/*!* Change color of dropdown links on hover *!*/
+ .dropdown-content a:hover {color: #42A5F5}
+
+/*!* Show the dropdown menu on hover *!*/
+ .dropdown:hover .dropdown-content {
+     display: block;
+ }
+
+/****************New Comment Styling******************/
+
+.newCommentImage{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: solid 1px #bdbdbd;
+    float: left;
+}
+
+.newCommentInput{
+    padding: 5px;
+    margin: 2px 5px 5px 10px;
+    border-radius: 30px;
+    border: #bdbdbd solid 1px;
+    width: 90%;
+    height: 30px;
+    background: #ffffff;
+    float: left;
+}
+
+.newCommentInput:focus{
+    outline: none !important;
+}
+
+ .commenting{
+     background: #ffffff;
+     padding: 15px 10px 15px 10px;
+     border-bottom: #bdbdbd solid 1px;
+     overflow-y: hidden;
+ }
+
+/****************User Comments Styling******************/
+
+ .comment{
+     margin-top: 0;
+     padding: 10px 10px 10px 10px;
+     overflow-y: hidden;
+     border-bottom: 1px solid #bdbdbd;
+     background: #ffffff;
+ }
+
+.oldCommentImageDiv{
+    width: 10%;
+    float:left;
+    overflow-x: hidden
+}
+
+.oldCommentImageDiv img{
+    height: 70px;
+    width: 70px;
+    border: solid 1px #bdbdbd
+}
+
+ .commentTextDiv{
+     width: 85%;
+     margin-top: 0;
+     float:left;
+     padding-top: 0px;
+     border: 1px solid #bdbdbd
+ }
+
+ .commentTextDiv h3{
+     background: #E0E0E0;
+     margin-top: 0;
+     height: 40px;
+     padding: 10px 10px 0px 10px;
+ }
+
+ .commentTextDiv p{
+     padding: 0px 10px 0px 10px;
+ }

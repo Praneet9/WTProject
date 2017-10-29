@@ -7,7 +7,27 @@ html,body{
     background-size: cover;
 }
 
+@font-face { font-family: Acme; src: url('../fonts/Acme-Regular.ttf'); }
+@font-face { font-family: Pacifico; src: url('../fonts/Pacifico-Regular.ttf'); }
+@font-face { font-family: IndieFlower; src: url('../fonts/IndieFlower.ttf'); }
+@font-face { font-family: BreeSerif; src: url('../fonts/BreeSerif-Regular.ttf'); }
+
 /*************************Navbar Styling****************************/
+
+#maincontent h1{
+    font-family: Acme;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0px;
+    color: #263238;
+    margin-bottom: 0;
+}
+
+#maincontent #subtitle{
+    font-family: BreeSerif;
+    text-align: center;
+    font-size: 20px;
+}
 
 #navbar{
     background: transparent;
@@ -27,6 +47,8 @@ nav a{
     font-size: larger;
     text-align: center;
     padding: 16px;
+    font-family: BreeSerif;
+    font-size: 15px;
 }
 nav .navBlocks a{
     text-decoration: none;
@@ -77,6 +99,7 @@ nav .navBlocks a:hover{
 #tabbox a{
     float: left;
     text-decoration: none;
+    font-family: BreeSerif;
     color: #E0E0E0;
 }
 .select{
@@ -84,6 +107,7 @@ nav .navBlocks a:hover{
 }
 #formpanel{
     background: #212121;
+    font-family: BreeSerif;
 }
 label{
     display: block;
@@ -136,6 +160,28 @@ form{
     position: relative;
     padding: 30px;
 }
+
+#extraLogins{
+    float: right;
+}
+
+#extraLogins a button{
+    border-radius: 50%;
+    padding-top: 20px;
+    float: left;
+    background: transparent;
+    color: #E0E0E0;
+    border: none
+}
+
+#extraLogins a button:focus{
+    outline: none !important;
+}
+
+#extraLogins a:hover{
+    cursor: hand;
+}
+
 .googlebutton{
     text-align: center;
     width: 100%;

@@ -19,17 +19,12 @@
             <h3>HashMe</h3>
         </div>-->
         <div style="width: 20%; float: left; padding-top: 10px; padding-left: 30px">
-            <img src="images/hashme_logo.PNG" width="120px" height="40px" style="background: transparent" alt="">
+            <img src="images/new1.png" width="120px" height="40px" style="background: transparent" alt="">
         </div>
         <div id="navList">
-            <a href="#settings" class="dropdown">Settings</a>
-            <div class="dropdown-content">
-                <a href="#">Report</a>
-                <a href="#">Spam</a>
-                <a href="#">Hide</a>
-            </div>
+            <a href="#logout" onclick="logoutClicked()">Logout</a>
             <a href="#contact">Profile</a>
-            <a href="#home">Home</a>
+            <a href="#home" id="currentUser">Home</a>
             <input type="search" style="color: white; background: transparent; border: none; border-bottom: 1px solid #ffffff; float: right; margin-top: 18px" placeholder="Search...">
         </div>
     </div>
@@ -44,33 +39,33 @@
                         <input type="checkbox" id="list-item-1">
                         <label for="list-item-1" class="first">Favourites</label>
                         <ul>
-                            <li>Slabo</li>
-                            <li>Droid Serif</li>
-                            <li>Roboto Serif</li>
-                            <li>Lora</li>
-                            <li>Meriweather</li>
+                            <li>#beauty</li>
+                            <li>#nature</li>
+                            <li>#cricket</li>
+                            <li>#football</li>
+                            <li>#politics</li>
                         </ul>
                     </li>
                     <li class="droplist">
                         <input type="checkbox" id="list-item-2">
                         <label for="list-item-2">Contributions</label>
                         <ul>
-                            <li>Open Sans</li>
-                            <li>Roboto</li>
-                            <li>Lato</li>
-                            <li>Stabo</li>
-                            <li>Oswald</li>
+                            <li>#cricket</li>
+                            <li>#google</li>
+                            <li>#social_media</li>
+                            <li>#nature</li>
+                            <li>#politics</li>
                         </ul>
                     </li>
                     <li class="droplist">
                         <input type="checkbox" id="list-item-3">
                         <label for="list-item-3" class="last">Tags</label>
                         <ul>
-                            <li>Inconsolata</li>
-                            <li>Source Code Pro</li>
-                            <li>Droid Sans Mono</li>
-                            <li>Ubuntu Mono</li>
-                            <li>Cousine</li>
+                            <li>#nature</li>
+                            <li>#cricket</li>
+                            <li>#sports</li>
+                            <li>#politics</li>
+                            <li>#celebrities</li>
                         </ul>
                     </li>
                 </ul>
@@ -262,7 +257,26 @@
 
         </div>
 
+        <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
 
+
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyCAXLqOTUPjAHYXe7Br8F0Wv45XOE6cTME",
+                authDomain: "hashme-8151e.firebaseapp.com",
+                databaseURL: "https://hashme-8151e.firebaseio.com",
+                projectId: "hashme-8151e",
+                storageBucket: "",
+                messagingSenderId: "180869021424"
+            };
+            firebase.initializeApp(config);
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/timeline.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
 
 
 

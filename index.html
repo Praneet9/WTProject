@@ -9,8 +9,7 @@
 
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
+
 
     </head>
 
@@ -23,8 +22,9 @@
                 <nav>
 
                     <!--<a href="#" style="font-size: 25px">HashMe</a>-->
-                    <div style="width: 20%; float: left; padding-top: 10px; padding-left: 30px">
-                        <img src="images/hashme_logo.PNG" width="120px" height="40px" style="background: transparent" alt="">
+                    <div  style="width: 20%; float: left; padding-top: 10px; padding-left: 30px">
+                        <img src="images/5.png" width="120px" height="40px" style="background: transparent" alt="">
+
                     </div>
 
                     <div class="navBlocks">
@@ -64,14 +64,15 @@
                     <div id="formpanel">
                         <div id="signinbox">
                             <form action="#" id="signinform" method = "post">
-                                <input type="text" name="username" id="username">
-                                <label for="username">Username</label>
-                                <input type="text" name="password" id="password">
+                                <input type="email" name="email" id="email" required>
+                                <label for="email">Email</label>
+                                <input type="password" name="password" id="password">
                                 <label for="password">Password</label><br>
                                 <div style="width: 100%; height: 50px">
                                     <div style="float: left">
                                         <button class="signinbutton" id="Signin" style="border: none;
-                                        height: 40px; width: 120px; background: #42A5F5; font-family: BreeSerif">LOGIN</button>
+                                        height: 40px; width: 120px; background: #42A5F5; font-family: BreeSerif; " onclick="loginClicked()"><a
+                                                href="#" style="text-decoration: none; color: black" >LOGIN</a></button>
                                     </div>
                                     <div id="extraLogins">
                                         <p style="float: left; color: white">Or Login using - </p>
@@ -100,8 +101,8 @@
                                 </div>
                                 <br>
                                 <p
-                                        style="color: white;">Forgot Password? <a href="user_feed.html" style="text-decoration: none;
-                                         color: #42A5F5; font-style: normal">Click Here!</a></p>
+                                        style="color: white;">Forgot Password? <a href="#" style="text-decoration: none;
+                                         color: #42A5F5; font-style: normal" onclick="loginClicked()">Click Here!</a></p>
 
                             </form>
                         </div>
@@ -118,8 +119,14 @@
                                 <input type="password" name="email" id="newPassword">
                                 <label for="newPassword">New Password</label>
                                 <input type="date" name="dob" id="dob" style="color: #9E9E9E;">
-                                <h3 style="text-align: center; color: #ffffff; font-style: normal">OR</h3>
-                                <button class="googlebutton" id="googleSigniup">Sign up with Google</button>
+
+                                <button class="Signupbutton" id="Signiup" onclick="registerClicked()" >
+                                    <a href="#"
+                                       style="text-decoration: none; color: black; font-family: BreeSerif"
+                                       >
+                                        REGISTER
+                                    </a>
+                                </button>
                             </form>
                         </div>
                     </div>
@@ -129,6 +136,28 @@
             </div>
 
         </section>
+
+
+        <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyCAXLqOTUPjAHYXe7Br8F0Wv45XOE6cTME",
+                authDomain: "hashme-8151e.firebaseapp.com",
+                databaseURL: "https://hashme-8151e.firebaseio.com",
+                projectId: "hashme-8151e",
+                storageBucket: "",
+                messagingSenderId: "180869021424"
+            };
+            firebase.initializeApp(config);
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/index.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+
 
     </body>
 

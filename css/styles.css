@@ -69,6 +69,7 @@ nav .navBlocks a:hover{
     background-size: cover;
     height: 720px
 }*/
+
 #container{
     float: left;
     width: 40%;
@@ -182,15 +183,15 @@ form{
     cursor: hand;
 }
 
-.googlebutton{
+.Signupbutton{
+    margin-top: 20px;
     text-align: center;
     width: 100%;
     height: 50px;
-    background: red;
-    color: white;
+    background: #42A5F5;
+    color: black;
     border: none;
     border-radius: 5px;
 
 }
 
-/*************************Floating Labels Styling****************************/
